@@ -12,6 +12,8 @@ A boilerplate repository showcasing how to deploy a flaskbackend container in Az
 The Docker eliminates the guest host and the hypervisor.
 If there is a development, testing and production environment and I am using a specific version of let's say, redis. Then Redis will need to be installed manually 3 times. By using Docker we are encapsulating both the code and its dependencies in a single place: a container and share the container.
 
+We can have in the same machine, different containers running different applications doing different stuff without interferring with other containers.
+
 
 3. Create Azure resource group, registry.
 4. Push the docker image into the registry.
