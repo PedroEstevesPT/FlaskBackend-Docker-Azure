@@ -8,11 +8,16 @@ A boilerplate repository showcasing how to deploy a flaskbackend container in Az
 
 
 
-2. Dockerize the Flask APP.
-The Docker eliminates the guest host and the hypervisor.
-If there is a development, testing and production environment and I am using a specific version of let's say, redis. Then Redis will need to be installed manually 3 times. By using Docker we are encapsulating both the code and its dependencies in a single place: a container and share the container.
+2. Dockerize the Flask APP (Building the image to deploy the container)
 
+Docker eliminates the guest host and the hypervisor.
+If there is a development, testing and production environment (3 different machines) and I am using a specific version of let's say, Redis. 
+Then Redis will need to be installed manually 3 times. 
+By using Docker we are encapsulating both the code and its dependencies in a single place: a container, which can be deployed across different scenarios.
 We can have in the same machine, different containers running different applications doing different stuff without interferring with other containers.
+Containers are built from images. Images are read-only and allow the containers to be built.
+
+
 
 
 3. Create Azure resource group, registry.
