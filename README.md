@@ -16,7 +16,7 @@ Then Redis will need to be installed manually 3 times.
 By using Docker we are encapsulating both the code and its dependencies in a single place: a container, which can be deployed across different scenarios.
 We can have in the same machine, different containers running different applications doing different stuff without interferring with other containers.
 Containers are built from images. Images are read-only and allow the containers to be built.
-
+Docker images are built from a Dockerfile.
 
 
 
